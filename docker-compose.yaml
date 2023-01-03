@@ -1,0 +1,5 @@
+services:
+  emod:
+    build: .
+    volumes:
+      - ./:/EMOD

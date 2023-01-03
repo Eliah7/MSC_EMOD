@@ -1,0 +1,21 @@
+docker run -it  openmalaria:v2  
+
+docker run -it  -v ${PWD}:/om/work    openmalaria:v2  # run and expose the current directory as the volume for the running container 
+./openMalaria  -s scenario.xml -o ./work/output.txt  # run openMalaria simulation and save results in the working directory volume that has been exposed
+
+docker run -it  -v ${PWD}:/om/work openmalaria:v2 -c "./openMalaria  -s scenario.xml -o ./work/output.txt" # run docker container and output the file to the current working directory
+
+docker run -it  -v ${PWD}:/om/work openmalaria:v2 -c "./openMalaria  -s ./work/scenario.xml -o ./work/output2.txt" # run docker container, pass the scenario file and output the file to the current working directory
+
+
+docker run -it  -v ${PWD}/data:/om/work openmalaria:v2 -c "./openMalaria  -s ./work/scenario.xml -o ./work/output3.txt"
+
+# run no 11 from a python script and get the output into this program.
+# convert the results to a reward 
+# 
+
+# what is the state of this openMalaria environment
+# what is the reward
+# what are the actions that the agent can perform
+# How do we simulate this run for single region
+# We need to run this for multiple cities
