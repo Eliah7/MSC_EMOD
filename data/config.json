@@ -284,6 +284,7 @@
       "Parasite_Switch_Type": "RATE_PER_PARASITE_7VARS",
       "Population_Density_C50": 30,
       "Population_Density_Infectivity_Correction": "CONSTANT_INFECTIVITY",
+      "Infectivity_Scale_Type": "CONSTANT_INFECTIVITY",
       "Population_Scale_Type": "FIXED_SCALING",
       "Post_Infection_Acquisition_Multiplier": 1,
       "Post_Infection_Mortality_Multiplier": 1,
