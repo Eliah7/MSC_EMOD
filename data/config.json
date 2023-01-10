@@ -311,7 +311,7 @@
       "Sample_Rate_Birth": 2,
       "Semipermanent_Habitat_Decay_Rate": 0.01,
       "Serialization_Type": "NONE",
-      "Simulation_Duration": 3650,
+      "Simulation_Duration": 365,
       "Simulation_Timestep": 1,
       "Simulation_Type": "MALARIA_SIM",
       "Start_Time": 0,
