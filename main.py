@@ -29,16 +29,11 @@ def execute_docker_commands(*commands):
     # try:
     client = docker.from_env()
 
-    print(f"{os.getcwd()}")
-    client.containers.run(image="idm:v3", volumes=[f"{os.getcwd()}/data:/EMOD"], command=["-c", "/Eradication -C config.json"] )
-    print(client.containers.list())
-    # container = client.containers.run(image="idm:v3", command='echo hello world', volumes=[
-                                    #   f"{os.getcwd()}/data:/EMOD"], detach=True)
-    # container = client.containers.run("alpine",["echo", "hello", "world"], detach=True)
-
-    # print(container.logs())
-    # except Exception:
-    #     print("\n *** Something Failed *** \n")
+    # print(f"{os.getcwd()}")
+    cont = client.containers.run(image="idm:v3", volumes=[f"{os.getcwd()}/data:/EMOD"], command=["-c", "/Eradication -C config.json"], detach=True)
+    cont.wait()
+    print(cont.logs().decode('UTF-8'))
+    # print(client.containers.list())
 
 
 if __name__ == '__main__':
