@@ -5,19 +5,11 @@ def run_simulation():
     - compute the reward and return the reward
     """
     print("\nStarting Simulation...\n")
-    execute_docker_commands("idm:v3", "images")
+    execute_docker_commands()
     # compute reward
     # consider states as input to the simulation
     # find out how states will be represented
     
-
-
-def execute_commandline_command(command):
-    """
-    """
-    import subprocess
-    subprocess.run(["docker", "run  idm:v3", "${PWD}/data:/EMOD", "-c" ,"\"/Eradication  --help\""])
-    print(command)
 
 
 def execute_docker_commands(*commands):
