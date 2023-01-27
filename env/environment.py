@@ -2,22 +2,24 @@ import gym
 from gym import spaces
 import numpy as np
 
+
 class MalariaEnvironment(gym.Env):
     def __init__(self, render_mode=None, size=5):
-        self.size = size  # The size of the square grid
-        self.window_size = 512  # The size of the PyGame window
-
-        # Observations are dictionaries with the agent's and the target's location.
-        # Each location is encoded as an element of {0, ..., `size`}^2, i.e. MultiDiscrete([size, size]).
+        # Observations are dictionaries with the agent's and the target's location
         self.observation_space = spaces.Dict(
             {
-                "agent": spaces.Box(0, size - 1, shape=(2,), dtype=int),
-                "target": spaces.Box(0, size - 1, shape=(2,), dtype=int),
+                "agent": spaces.Box(0, size - 1, shape=(1,), dtype=int),
+                "target": spaces.Box(0, size - 1, shape=(1,), dtype=int), # change these to configuration parameters of the emod model
             }
         )
 
-        # We have 4 actions, corresponding to "right", "up", "left", "down"
-        self.action_space = spaces.Discrete(4)
+        # We have 2 dimensions each bounded from (0,1] for itns and another irs
+        self.action_space = spaces.Dict(
+            {
+                "itns": spaces.Box(0, 1, shape=(1,), dtype=float),
+                "irs": spaces.Box(0, 1,  shape=(1,), dtype=float),
+            }
+        ) # 
 
         """
         The following dictionary maps abstract actions from `self.action_space` to 
@@ -74,7 +76,13 @@ class MalariaEnvironment(gym.Env):
         return observation, info
     
     def step(self, action):
-        # Map the action (element of {0,1,2,3}) to the direction we walk in
+        """
+        TODO: 
+        - take the action from the agent and write it to configuration files
+        - run simulation using the configration 
+        - use the output folder to get the reward and return to next step for observation by the agent
+        """ 
+
         direction = self._action_to_direction[action]
         # We use `np.clip` to make sure we don't leave the grid
         self._agent_location = np.clip(
