@@ -6,47 +6,62 @@
                 "Intervention_Config": {
                     "Blocking_Config": {
                         "Box_Duration": 3650,
-                        "Initial_Effect": 0.0,
+                        "Initial_Effect": 0.9,
                         "class": "WaningEffectBox"
                     },
                     "Cost_To_Consumer": 8.0,
                     "Killing_Config": {
                         "Box_Duration": 365,
-                        "Initial_Effect": 0.7,
+                        "Initial_Effect": 0.3,
                         "class": "WaningEffectBox"
                     },
                     "class": "IRSHousingModification"
                 },
-                "Number_Repetitions": 4,
+                "Number_Repetitions": 365,
                 "Target_Demographic": "Everyone",
-                "Timesteps_Between_Repetitions": 365,
+                "Timesteps_Between_Repetitions": 1,
                 "class": "StandardInterventionDistributionEventCoordinator"
             },
             "Nodeset_Config": {
                 "class": "NodeSetAll"
             },
-            "Start_Day": 2190,
+            "Start_Day": 1,
             "class": "CampaignEvent"
         },
         {
-            "Event_Coordinator_Config": {
-                "Demographic_Coverage": 0.8,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 3.75,
-                    "Dosing_Type": "FullTreatmentParasiteDetect",
-                    "Drug_Type": "Chloroquine",
-                    "class": "AntimalarialDrug"
-                },
-                "Number_Repetitions": 9,
-                "Target_Demographic": "Everyone",
-                "Timesteps_Between_Repetitions": 60,
-                "class": "StandardInterventionDistributionEventCoordinator"
-            },
+            "class": "CampaignEvent",
             "Nodeset_Config": {
                 "class": "NodeSetAll"
             },
-            "Start_Day": 2190.0,
-            "class": "CampaignEvent"
+            "Start_Day": 1,
+            "Event_Coordinator_Config": {
+                "class": "StandardInterventionDistributionEventCoordinator",
+                "Target_Demographic": "Everyone",
+                "Demographic_Coverage": 0.9,
+                "Intervention_Config": {
+                    "class": "SimpleBednet",
+                    "Cost_To_Consumer": 3.75,
+                    "Repelling_Config": {
+                        "Initial_Effect": 0.1,
+                        "Decay_Time_Constant": 730,
+                        "class": "WaningEffectExponential"
+                    },
+                    "Killing_Config": {
+                        "Initial_Effect": 0.7,
+                        "Decay_Time_Constant": 0,
+                        "class": "WaningEffectExponential"
+                    },
+                    "Blocking_Config": {
+                        "Initial_Effect": 0.9,
+                        "Decay_Time_Constant": 730,
+                        "class": "WaningEffectExponential"
+                    },
+                    "Usage_Config": {
+                        "class": "WaningEffectConstant",
+                        "Initial_Effect": 1.0
+                    }
+                }
+            }
         }
     ],
     "Use_Defaults": 1
