@@ -1,4 +1,9 @@
 from utils.json_helper import JSONHelper
+from gym.spaces import Dict
+from collections import OrderedDict
+import numpy as np
+from typing import OrderedDict
+import gym 
 
 class Configurations:
     """
@@ -8,9 +13,9 @@ class Configurations:
         self.env = env
         self.configs = JSONHelper("data/config.json").json_obj['parameters']
 
-
-    def get_initial_state(self):
+    def get_initial_state(self) -> OrderedDict:
+        return OrderedDict([
+            ('Acquisition_Blocking_Immunity_Decay_Rate', np.array([self.configs['Acquisition_Blocking_Immunity_Decay_Rate']], dtype=np.float32))
+        ])
+       
         
-        return { 
-            'Acquisition_Blocking_Immunity_Decay_Rate' : self.configs['Acquisition_Blocking_Immunity_Decay_Rate'] 
-        }
