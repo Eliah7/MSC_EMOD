@@ -18,8 +18,9 @@ config = A3CConfig()
 # Print out some default values.
 print(config.sample_async)  
 # Update the config object.
-config = config.training( 
-    lr=tune.grid_search([0.001, 0.0001]), use_critic=False)
+# config = config.training( 
+    # lr=tune.grid_search([0.001, 0.0001]), use_critic=False)
+
 # Set the config object's env.
 config = config.environment(env="MalariaEnvironment") 
 # Use to_dict() to get the old-style python config dict

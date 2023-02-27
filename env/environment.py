@@ -16,7 +16,6 @@ class MalariaEnvironment(gym.Env):
             "Acquisition_Blocking_Immunity_Decay_Rate": Box(low=0.0, high=1.0, shape=(1,), dtype=np.float32)
         })
         
-
         # self.observation_space = Box(low=-1.0, high=2.0, shape=(2, 1), dtype=np.float32)
 
         # We have 2 dimensions each bounded from (0,1] for itns and another irs
@@ -64,12 +63,12 @@ class MalariaEnvironment(gym.Env):
         # ITNS_action = action['ITNS'][0]
 
         # print(f"ACTIONS: IRS {IRS_action}; ITNS {ITNS_action}\n")
-
+        print(f"ACTION {action}")
         # An episode is done iff the agent has reached the target
         terminated = 0
         reward = 1 if terminated else 0  # Binary sparse rewards
         observation = self._get_obs()
         # print(type(observation), observation)
-        info = self._get_info()
+        # info = self._get_info()
 
-        return observation, reward, False, observation
+        return observation, reward, True, observation

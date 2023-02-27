@@ -1,0 +1,36 @@
+Failure # 1 (occurred at 2023-02-27_16-11-20)
+Traceback (most recent call last):
+  File "/home/mbwie001/.local/lib/python3.8/site-packages/ray/tune/execution/ray_trial_executor.py", line 1070, in get_next_executor_event
+    future_result = ray.get(ready_future)
+  File "/home/mbwie001/.local/lib/python3.8/site-packages/ray/_private/client_mode_hook.py", line 105, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mbwie001/.local/lib/python3.8/site-packages/ray/_private/worker.py", line 2311, in get
+    raise value
+  File "python/ray/_raylet.pyx", line 1135, in ray._raylet.task_execution_handler
+  File "python/ray/_raylet.pyx", line 1045, in ray._raylet.execute_task_with_cancellation_handler
+  File "python/ray/_raylet.pyx", line 782, in ray._raylet.execute_task
+  File "python/ray/_raylet.pyx", line 945, in ray._raylet.execute_task
+  File "python/ray/_raylet.pyx", line 599, in ray._raylet.store_task_errors
+ray.exceptions.RayActorError: The actor died because of an error raised in its creation task, [36mray::A3C.__init__()[39m (pid=93303, ip=10.8.13.207, repr=A3C)
+  File "/home/mbwie001/.local/lib/python3.8/site-packages/ray/rllib/algorithms/algorithm.py", line 441, in __init__
+    super().__init__(
+  File "/home/mbwie001/.local/lib/python3.8/site-packages/ray/tune/trainable/trainable.py", line 169, in __init__
+    self.setup(copy.deepcopy(self.config))
+  File "/home/mbwie001/.local/lib/python3.8/site-packages/ray/rllib/algorithms/algorithm.py", line 566, in setup
+    self.workers = WorkerSet(
+  File "/home/mbwie001/.local/lib/python3.8/site-packages/ray/rllib/evaluation/worker_set.py", line 191, in __init__
+    raise e.args[0].args[2]
+  File "/home/mbwie001/.local/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 712, in __init__
+    self._build_policy_map(
+  File "/home/mbwie001/.local/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 1970, in _build_policy_map
+    self.policy_map.create_policy(
+  File "/home/mbwie001/.local/lib/python3.8/site-packages/ray/rllib/policy/policy_map.py", line 146, in create_policy
+    policy = create_policy_for_framework(
+  File "/home/mbwie001/.local/lib/python3.8/site-packages/ray/rllib/utils/policy.py", line 117, in create_policy_for_framework
+    return policy_class(
+  File "/home/mbwie001/.local/lib/python3.8/site-packages/ray/rllib/algorithms/a3c/a3c_tf_policy.py", line 74, in __init__
+    LearningRateSchedule.__init__(
+  File "/home/mbwie001/.local/lib/python3.8/site-packages/ray/rllib/policy/tf_mixins.py", line 40, in __init__
+    lr_schedule, outside_value=lr_schedule[-1][-1], framework=None
+TypeError: 'bool' object is not subscriptable
+
