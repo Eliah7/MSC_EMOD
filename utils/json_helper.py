@@ -28,6 +28,9 @@ class JSONHelper:
         else:
             return self.get_value_from_key_list(key_list)
 
+    
+    def get_value_from_parent(self, parent='parameters', key='Acquisition_Blocking_Immunity_Decay_Rate'):
+        return self.json_obj[parent][key]
 
     
     def write_value_to_key_list(self, value, key_list=[]):

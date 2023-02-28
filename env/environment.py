@@ -3,7 +3,7 @@ from gym.spaces import Dict, Box, Tuple
 import numpy as np
 from utils.config_map import Configurations
 from utils.campaigns_map import CampaignsMap
-
+from utils.simulation import run_simulation
 
 class MalariaEnvironment(gym.Env):
     def __init__(self, render_mode=None, size=5):
@@ -16,8 +16,6 @@ class MalariaEnvironment(gym.Env):
             "Acquisition_Blocking_Immunity_Decay_Rate": Box(low=0.0, high=1.0, shape=(1,), dtype=np.float32)
         })
         
-        # self.observation_space = Box(low=-1.0, high=2.0, shape=(2, 1), dtype=np.float32)
-
         # We have 2 dimensions each bounded from (0,1] for itns and another irs
         self.action_space =  Dict(  # coverage of ITNS and IRS
             {
@@ -26,25 +24,16 @@ class MalariaEnvironment(gym.Env):
             }
         )
 
-        # self.action_space = Box(low=0.0, high=1.0, shape=(1,), dtype=np.float32)
-
 
     def _get_obs(self):
         # print("INITIAL STATE", self.config_map.get_initial_state())
-        
         return self.config_map.get_initial_state()
     
     def _get_info(self):
         return self._get_obs()
 
     def reset(self, seed=None, options=None):
-        # We need the following line to seed self.np_random
-        # super().reset()
-
         observation = self._get_obs()
-       
-        info = self._get_info()
-        # print(observation, info)
 
         return observation
     
@@ -59,11 +48,11 @@ class MalariaEnvironment(gym.Env):
         """ 
         # take the actions and set them in the configurations
         # run the simulation
-        IRS_action = action['IRS'][0]
-        ITNS_action = action['ITNS'][0]
-
+    
         print(f"ACTION {action}")
-        # An episode is done iff the agent has reached the target
+
+        run_simulation()
+
         terminated = 0
         reward = 1 if terminated else 0  # Binary sparse rewards
         observation = self._get_obs()

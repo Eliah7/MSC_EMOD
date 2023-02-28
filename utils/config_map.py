@@ -11,11 +11,11 @@ class Configurations:
     """
     def __init__(self, env) -> None:
         self.env = env
-        self.configs = JSONHelper("data/config.json").json_obj['parameters']
+        self.configs = JSONHelper("data/config.json")
 
     def get_initial_state(self) -> OrderedDict:
         return OrderedDict([
-            ('Acquisition_Blocking_Immunity_Decay_Rate', np.array([self.configs['Acquisition_Blocking_Immunity_Decay_Rate']], dtype=np.float32))
+            ('Acquisition_Blocking_Immunity_Decay_Rate', np.array([self.configs.get_value_from_parent(parent='parameters', key='Acquisition_Blocking_Immunity_Decay_Rate')], dtype=np.float32))
         ])
        
         
