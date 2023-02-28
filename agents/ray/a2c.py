@@ -18,16 +18,20 @@ config = A3CConfig()
 # Print out some default values.
 print(config.sample_async)  
 # Update the config object.
-# config = config.training( 
-    # lr=tune.grid_search([0.001, 0.0001]), use_critic=False)
+config = config.training(lr=0.01)
 
 # Set the config object's env.
 config = config.environment(env="MalariaEnvironment") 
 # Use to_dict() to get the old-style python config dict
 # when running with tune.
-tune.Tuner(  
-    "A3C",
-   # stop={"episode_reward_mean": 200},
-    param_space=config.to_dict(),
-     run_config=air.RunConfig(local_dir="./agents/ray/results", name="test_experiment")
-).fit()
+
+print(config.to_dict())
+algo = config.build()  
+algo.train() 
+# evaluation_duration
+# metrics_episode_collection_timeout_s
+# tune.Tuner(  
+#     "A3C",
+#     param_space=config.to_dict(),
+#      run_config=air.RunConfig(local_dir="./agents/ray/results", name="test_experiment")
+# ).fit()
