@@ -9,7 +9,14 @@ class CampaignsMap:
         self.env = env
         self.configs = JSONHelper("data/config.json")
 
-    def write_actions(self, action):
+    def set_actions(self, action):
         IRS_action = action['IRS'][0]
         ITNS_action = action['ITNS'][0]
-        pass
+
+        print(f"Setting IRS to {IRS_action}")
+        print(f"Setting ITNS to {ITNS_action}")
+
+
+        self.configs.write_actions(IRS_action, ITNS_action)
+    
+    
