@@ -84,7 +84,7 @@ def plotCompareFromDisk( reference, comparison, label = "" ):
     #figure = plt.figure(label.split('/')[-1],figsize=(80,60))   # label includes the full (relative) path to the scenario, take just the final directory
     F = pylab.gcf()
     DefaultSize = F.get_size_inches()
-    #F.set_size_inches( (DefaultSize[0]*3, DefaultSize[1]*2 ) )
+    F.set_size_inches( (DefaultSize[0]*4, DefaultSize[1]*3 ) )
     #Figure.set_figsize_inches( ( 120,80) )
 
     ref_tstep = 1
@@ -131,11 +131,14 @@ def plotCompareFromDisk( reference, comparison, label = "" ):
     #    mng.window.state('zoomed')
     #else:
         #mng.frame.Maximize(True)
-    if "savefig" in sys.argv:
-        path_dir = label.split( os.path.sep )[0]
-        plotname = label.split( os.path.sep )[1]
-        pylab.savefig( os.path.join( path_dir, plotname ) + ".png", bbox_inches='tight', orientation='landscape' ) #, dpi=200 )
-    plt.show()
+    # if "savefig" in sys.argv:
+    print(label)
+    # path_dir = label.split( os.path.sep )[0]
+    # plotname = label.split( os.path.sep )[1]
+    # pylab.savefig( os.path.join( path_dir, plotname ) + ".png", bbox_inches='tight', orientation='landscape' ) #, dpi=200 )
+    pylab.savefig("experiment.png")
+    # plt.show()
+
 
 def plotBunchFromMongo():
     mysims = mc.find( { "parameters.ConfigName":"Polio Bihar Regression Test", "user":"jbloedow", "sim.status":"Finished", "parameters.Run_Number":{ "$gt":40 }} )
@@ -208,7 +211,7 @@ def main( reference, comparison, label ):
     #plotOneFromDisk()
 
     plotCompareFromDisk( reference, comparison, label )
-    #plotBunch()
+    # plotBunch()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

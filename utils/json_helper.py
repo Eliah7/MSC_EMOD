@@ -33,8 +33,19 @@ class JSONHelper:
         return self.json_obj[parent][key]
 
     
-    def write_value_to_key_list(self, value, key_list=[]):
-        pass
+    def write_actions(self, irs, itns): 
+        # get values from the simulation and output to campaigns file
+        print("\n\n*** WRITING TO CAMPAIGNS FILE *** \n\n")
+        self.json_obj["Events"][0]["Event_Coordinator_Config"]["Demographic_Coverage"] = irs
+        self.json_obj["Events"][1]["Event_Coordinator_Config"]["Demographic_Coverage"] = itns
+
+        json_object = json.dumps(self.json_obj, indent=4)
+
+        # Writing to sample.json
+        with open(self.file_path, "w") as outfile:
+            outfile.write(json_object)
+      
+        
     
 
     # def 
