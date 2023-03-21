@@ -26,5 +26,5 @@ def execute_docker_commands(*commands):
     # print(f"{os.getcwd()}")
     cont = client.containers.run(image="idm:v3", volumes=[f"{os.getcwd()}/data:/EMOD"], command=["-c", "/Eradication -C config.json"], detach=True)
     cont.wait()
-    print(cont.logs().decode('UTF-8'))
+    # print(cont.logs().decode('UTF-8'))
     # print(client.containers.list())
