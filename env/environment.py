@@ -3,6 +3,7 @@ from gym.spaces import Dict, Box, Tuple
 import numpy as np
 from utils.config_map import Configurations
 from utils.campaigns_map import CampaignsMap
+from utils.output_map import OutputMap
 from utils.simulation import run_simulation
 
 class MalariaEnvironment(gym.Env):
@@ -10,6 +11,7 @@ class MalariaEnvironment(gym.Env):
         super(MalariaEnvironment, self).__init__()
         self.config_map = Configurations(self)
         self.campaign_map = CampaignsMap(self)
+        self.output_map = OutputMap(self)
         # Observations are dictionaries with the simulation configurations
         
         self.observation_space = Dict({
@@ -50,11 +52,13 @@ class MalariaEnvironment(gym.Env):
         # run the simulation
     
         print(f"ACTION {action}")
-
+        actions_set_ = self.campaign_map.set_actions(action)
+        print(f"Action is set{actions_set_}")
         run_simulation()
-
+        reward = self.output_map.get_rewards()
+        print(f"REWARD {reward}")
         terminated = 0
-        reward = 1 if terminated else 0  # Binary sparse rewards
+        # reward = 1 if terminated else 0  # Binary sparse rewards
         observation = self._get_obs()
         done = True # environment is MAB
 

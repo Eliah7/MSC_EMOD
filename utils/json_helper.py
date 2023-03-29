@@ -35,7 +35,7 @@ class JSONHelper:
     
     def write_actions(self, irs, itns): 
         # get values from the simulation and output to campaigns file
-        print("\n\n*** WRITING TO CAMPAIGNS FILE *** ")
+        print(f"\n\n*** WRITING TO CAMPAIGNS FILE ***")
         self.json_obj["Events"][0]["Event_Coordinator_Config"]["Demographic_Coverage"] = irs
         self.json_obj["Events"][1]["Event_Coordinator_Config"]["Demographic_Coverage"] = itns
 

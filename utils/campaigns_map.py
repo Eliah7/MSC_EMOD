@@ -7,7 +7,7 @@ class CampaignsMap:
     """
     def __init__(self, env) -> None:
         self.env = env
-        self.configs = JSONHelper("data/config.json")
+        self.configs = JSONHelper("data/campaign.json")
 
     def set_actions(self, action):
         IRS_action = action['IRS'][0]
@@ -18,5 +18,7 @@ class CampaignsMap:
 
 
         self.configs.write_actions(IRS_action, ITNS_action)
+
+        return True
     
     
