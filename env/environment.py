@@ -54,7 +54,7 @@ class MalariaEnvironment(gym.Env):
         print(f"ACTION {action}")
         actions_set_ = self.campaign_map.set_actions(action)
         print(f"Action is set{actions_set_}")
-        run_simulation()
+        wait_for_sim = run_simulation()
         reward = self.output_map.get_rewards()
         print(f"REWARD {reward}")
         terminated = 0

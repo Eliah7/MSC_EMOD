@@ -18,7 +18,7 @@ config = A3CConfig()
 # Print out some default values.
 # print(config.sample_async)  
 # Update the config object.
-config = config.training(lr=0.01)
+config = config.training(lr=0.01).rollouts(num_rollout_workers=1)
 
 # Set the config object's env.
 config = config.environment(env="MalariaEnvironment") 
