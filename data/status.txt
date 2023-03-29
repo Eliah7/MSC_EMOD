@@ -1999,3 +1999,21 @@ Beginning Simulation...
 999000 of 1000000 (node) individuals initialized.
 1000000 of 1000000 (node) individuals initialized.
 1000000 of 1000000 (node) individuals initialized.
+1 of 365 steps complete.
+2 of 365 steps complete.
+3 of 365 steps complete.
+4 of 365 steps complete.
+5 of 365 steps complete.
+6 of 365 steps complete.
+7 of 365 steps complete.
+8 of 365 steps complete.
+9 of 365 steps complete.
+10 of 365 steps complete.
+11 of 365 steps complete.
+12 of 365 steps complete.
+13 of 365 steps complete.
+14 of 365 steps complete.
+15 of 365 steps complete.
+16 of 365 steps complete.
+17 of 365 steps complete.
+18 of 365 steps complete.
