@@ -2,7 +2,7 @@
     "Events": [
         {
             "Event_Coordinator_Config": {
-                "Demographic_Coverage": 0.36358052492141724,
+                "Demographic_Coverage": 0.8928965330123901,
                 "Intervention_Config": {
                     "Blocking_Config": {
                         "Box_Duration": 3650,
@@ -37,7 +37,7 @@
             "Event_Coordinator_Config": {
                 "class": "StandardInterventionDistributionEventCoordinator",
                 "Target_Demographic": "Everyone",
-                "Demographic_Coverage": 0.0,
+                "Demographic_Coverage": 0.745815098285675,
                 "Intervention_Config": {
                     "class": "SimpleBednet",
                     "Cost_To_Consumer": 3.75,

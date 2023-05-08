@@ -27,7 +27,10 @@ config = config.environment(env="MalariaEnvironment")
 
 # print(config.to_dict())
 algo = config.build()  
-algo.train() 
+for _ in range(1000):
+    algo.train()
+
+# algo.train() 
 # evaluation_duration
 # metrics_episode_collection_timeout_s
 # tune.Tuner(  
