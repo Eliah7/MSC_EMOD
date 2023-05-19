@@ -4,8 +4,7 @@ import os
 
 class JSONHelper:
     def __init__(self, file_path):
-        # self.file_path = f"{os.getcwd()}/{file_path}" 
-        self.file_path = f"/home/mbwie001/ms/MSC_EMOD/{file_path}" 
+        self.file_path = f"{os.getcwd()}/{file_path}" 
         with open(self.file_path, 'r') as j:
                 self.json_obj = json.loads(j.read())  
         # try:
