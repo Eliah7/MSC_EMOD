@@ -15,7 +15,9 @@ class OutputMap:
         daily_infection_rate = np.array(self.configs["Channels"]["Daily (Human) Infection Rate"]["Data"])
         daily_eir = np.array(self.configs["Channels"]["Daily EIR"]["Data"])
         daily_disease_deaths = np.array(self.configs["Channels"]["Disease Deaths"]["Data"])
-        return -np.mean(daily_infection_rate) + -np.mean(daily_eir) + -np.sum(daily_disease_deaths)
+        infected = np.array(self.configs["Channels"]["Infected"]["Data"])
+        # return -np.mean(daily_infection_rate) + -np.mean(daily_eir) + -np.sum(daily_disease_deaths)
+        return -np.sum(infected)
         
     
     
