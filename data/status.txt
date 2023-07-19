@@ -1,369 +1,215 @@
 Beginning Simulation...
-1000 of 1000 (node) individuals initialized.
-1000 of 1000 (node) individuals initialized.
-1 of 365 steps complete.
-2 of 365 steps complete.
-3 of 365 steps complete.
-4 of 365 steps complete.
-5 of 365 steps complete.
-6 of 365 steps complete.
-7 of 365 steps complete.
-8 of 365 steps complete.
-9 of 365 steps complete.
-10 of 365 steps complete.
-11 of 365 steps complete.
-12 of 365 steps complete.
-13 of 365 steps complete.
-14 of 365 steps complete.
-15 of 365 steps complete.
-16 of 365 steps complete.
-17 of 365 steps complete.
-18 of 365 steps complete.
-19 of 365 steps complete.
-20 of 365 steps complete.
-21 of 365 steps complete.
-22 of 365 steps complete.
-23 of 365 steps complete.
-24 of 365 steps complete.
-25 of 365 steps complete.
-26 of 365 steps complete.
-27 of 365 steps complete.
-28 of 365 steps complete.
-29 of 365 steps complete.
-30 of 365 steps complete.
-31 of 365 steps complete.
-32 of 365 steps complete.
-33 of 365 steps complete.
-34 of 365 steps complete.
-35 of 365 steps complete.
-36 of 365 steps complete.
-37 of 365 steps complete.
-38 of 365 steps complete.
-39 of 365 steps complete.
-40 of 365 steps complete.
-41 of 365 steps complete.
-42 of 365 steps complete.
-43 of 365 steps complete.
-44 of 365 steps complete.
-45 of 365 steps complete.
-46 of 365 steps complete.
-47 of 365 steps complete.
-48 of 365 steps complete.
-49 of 365 steps complete.
-50 of 365 steps complete.
-51 of 365 steps complete.
-52 of 365 steps complete.
-53 of 365 steps complete.
-54 of 365 steps complete.
-55 of 365 steps complete.
-56 of 365 steps complete.
-57 of 365 steps complete.
-58 of 365 steps complete.
-59 of 365 steps complete.
-60 of 365 steps complete.
-61 of 365 steps complete.
-62 of 365 steps complete.
-63 of 365 steps complete.
-64 of 365 steps complete.
-65 of 365 steps complete.
-66 of 365 steps complete.
-67 of 365 steps complete.
-68 of 365 steps complete.
-69 of 365 steps complete.
-70 of 365 steps complete.
-71 of 365 steps complete.
-72 of 365 steps complete.
-73 of 365 steps complete.
-74 of 365 steps complete.
-75 of 365 steps complete.
-76 of 365 steps complete.
-77 of 365 steps complete.
-78 of 365 steps complete.
-79 of 365 steps complete.
-80 of 365 steps complete.
-81 of 365 steps complete.
-82 of 365 steps complete.
-83 of 365 steps complete.
-84 of 365 steps complete.
-85 of 365 steps complete.
-86 of 365 steps complete.
-87 of 365 steps complete.
-88 of 365 steps complete.
-89 of 365 steps complete.
-90 of 365 steps complete.
-91 of 365 steps complete.
-92 of 365 steps complete.
-93 of 365 steps complete.
-94 of 365 steps complete.
-95 of 365 steps complete.
-96 of 365 steps complete.
-97 of 365 steps complete.
-98 of 365 steps complete.
-99 of 365 steps complete.
-100 of 365 steps complete.
-101 of 365 steps complete.
-102 of 365 steps complete.
-103 of 365 steps complete.
-104 of 365 steps complete.
-105 of 365 steps complete.
-106 of 365 steps complete.
-107 of 365 steps complete.
-108 of 365 steps complete.
-109 of 365 steps complete.
-110 of 365 steps complete.
-111 of 365 steps complete.
-112 of 365 steps complete.
-113 of 365 steps complete.
-114 of 365 steps complete.
-115 of 365 steps complete.
-116 of 365 steps complete.
-117 of 365 steps complete.
-118 of 365 steps complete.
-119 of 365 steps complete.
-120 of 365 steps complete.
-121 of 365 steps complete.
-122 of 365 steps complete.
-123 of 365 steps complete.
-124 of 365 steps complete.
-125 of 365 steps complete.
-126 of 365 steps complete.
-127 of 365 steps complete.
-128 of 365 steps complete.
-129 of 365 steps complete.
-130 of 365 steps complete.
-131 of 365 steps complete.
-132 of 365 steps complete.
-133 of 365 steps complete.
-134 of 365 steps complete.
-135 of 365 steps complete.
-136 of 365 steps complete.
-137 of 365 steps complete.
-138 of 365 steps complete.
-139 of 365 steps complete.
-140 of 365 steps complete.
-141 of 365 steps complete.
-142 of 365 steps complete.
-143 of 365 steps complete.
-144 of 365 steps complete.
-145 of 365 steps complete.
-146 of 365 steps complete.
-147 of 365 steps complete.
-148 of 365 steps complete.
-149 of 365 steps complete.
-150 of 365 steps complete.
-151 of 365 steps complete.
-152 of 365 steps complete.
-153 of 365 steps complete.
-154 of 365 steps complete.
-155 of 365 steps complete.
-156 of 365 steps complete.
-157 of 365 steps complete.
-158 of 365 steps complete.
-159 of 365 steps complete.
-160 of 365 steps complete.
-161 of 365 steps complete.
-162 of 365 steps complete.
-163 of 365 steps complete.
-164 of 365 steps complete.
-165 of 365 steps complete.
-166 of 365 steps complete.
-167 of 365 steps complete.
-168 of 365 steps complete.
-169 of 365 steps complete.
-170 of 365 steps complete.
-171 of 365 steps complete.
-172 of 365 steps complete.
-173 of 365 steps complete.
-174 of 365 steps complete.
-175 of 365 steps complete.
-176 of 365 steps complete.
-177 of 365 steps complete.
-178 of 365 steps complete.
-179 of 365 steps complete.
-180 of 365 steps complete.
-181 of 365 steps complete.
-182 of 365 steps complete.
-183 of 365 steps complete.
-184 of 365 steps complete.
-185 of 365 steps complete.
-186 of 365 steps complete.
-187 of 365 steps complete.
-188 of 365 steps complete.
-189 of 365 steps complete.
-190 of 365 steps complete.
-191 of 365 steps complete.
-192 of 365 steps complete.
-193 of 365 steps complete.
-194 of 365 steps complete.
-195 of 365 steps complete.
-196 of 365 steps complete.
-197 of 365 steps complete.
-198 of 365 steps complete.
-199 of 365 steps complete.
-200 of 365 steps complete.
-201 of 365 steps complete.
-202 of 365 steps complete.
-203 of 365 steps complete.
-204 of 365 steps complete.
-205 of 365 steps complete.
-206 of 365 steps complete.
-207 of 365 steps complete.
-208 of 365 steps complete.
-209 of 365 steps complete.
-210 of 365 steps complete.
-211 of 365 steps complete.
-212 of 365 steps complete.
-213 of 365 steps complete.
-214 of 365 steps complete.
-215 of 365 steps complete.
-216 of 365 steps complete.
-217 of 365 steps complete.
-218 of 365 steps complete.
-219 of 365 steps complete.
-220 of 365 steps complete.
-221 of 365 steps complete.
-222 of 365 steps complete.
-223 of 365 steps complete.
-224 of 365 steps complete.
-225 of 365 steps complete.
-226 of 365 steps complete.
-227 of 365 steps complete.
-228 of 365 steps complete.
-229 of 365 steps complete.
-230 of 365 steps complete.
-231 of 365 steps complete.
-232 of 365 steps complete.
-233 of 365 steps complete.
-234 of 365 steps complete.
-235 of 365 steps complete.
-236 of 365 steps complete.
-237 of 365 steps complete.
-238 of 365 steps complete.
-239 of 365 steps complete.
-240 of 365 steps complete.
-241 of 365 steps complete.
-242 of 365 steps complete.
-243 of 365 steps complete.
-244 of 365 steps complete.
-245 of 365 steps complete.
-246 of 365 steps complete.
-247 of 365 steps complete.
-248 of 365 steps complete.
-249 of 365 steps complete.
-250 of 365 steps complete.
-251 of 365 steps complete.
-252 of 365 steps complete.
-253 of 365 steps complete.
-254 of 365 steps complete.
-255 of 365 steps complete.
-256 of 365 steps complete.
-257 of 365 steps complete.
-258 of 365 steps complete.
-259 of 365 steps complete.
-260 of 365 steps complete.
-261 of 365 steps complete.
-262 of 365 steps complete.
-263 of 365 steps complete.
-264 of 365 steps complete.
-265 of 365 steps complete.
-266 of 365 steps complete.
-267 of 365 steps complete.
-268 of 365 steps complete.
-269 of 365 steps complete.
-270 of 365 steps complete.
-271 of 365 steps complete.
-272 of 365 steps complete.
-273 of 365 steps complete.
-274 of 365 steps complete.
-275 of 365 steps complete.
-276 of 365 steps complete.
-277 of 365 steps complete.
-278 of 365 steps complete.
-279 of 365 steps complete.
-280 of 365 steps complete.
-281 of 365 steps complete.
-282 of 365 steps complete.
-283 of 365 steps complete.
-284 of 365 steps complete.
-285 of 365 steps complete.
-286 of 365 steps complete.
-287 of 365 steps complete.
-288 of 365 steps complete.
-289 of 365 steps complete.
-290 of 365 steps complete.
-291 of 365 steps complete.
-292 of 365 steps complete.
-293 of 365 steps complete.
-294 of 365 steps complete.
-295 of 365 steps complete.
-296 of 365 steps complete.
-297 of 365 steps complete.
-298 of 365 steps complete.
-299 of 365 steps complete.
-300 of 365 steps complete.
-301 of 365 steps complete.
-302 of 365 steps complete.
-303 of 365 steps complete.
-304 of 365 steps complete.
-305 of 365 steps complete.
-306 of 365 steps complete.
-307 of 365 steps complete.
-308 of 365 steps complete.
-309 of 365 steps complete.
-310 of 365 steps complete.
-311 of 365 steps complete.
-312 of 365 steps complete.
-313 of 365 steps complete.
-314 of 365 steps complete.
-315 of 365 steps complete.
-316 of 365 steps complete.
-317 of 365 steps complete.
-318 of 365 steps complete.
-319 of 365 steps complete.
-320 of 365 steps complete.
-321 of 365 steps complete.
-322 of 365 steps complete.
-323 of 365 steps complete.
-324 of 365 steps complete.
-325 of 365 steps complete.
-326 of 365 steps complete.
-327 of 365 steps complete.
-328 of 365 steps complete.
-329 of 365 steps complete.
-330 of 365 steps complete.
-331 of 365 steps complete.
-332 of 365 steps complete.
-333 of 365 steps complete.
-334 of 365 steps complete.
-335 of 365 steps complete.
-336 of 365 steps complete.
-337 of 365 steps complete.
-338 of 365 steps complete.
-339 of 365 steps complete.
-340 of 365 steps complete.
-341 of 365 steps complete.
-342 of 365 steps complete.
-343 of 365 steps complete.
-344 of 365 steps complete.
-345 of 365 steps complete.
-346 of 365 steps complete.
-347 of 365 steps complete.
-348 of 365 steps complete.
-349 of 365 steps complete.
-350 of 365 steps complete.
-351 of 365 steps complete.
-352 of 365 steps complete.
-353 of 365 steps complete.
-354 of 365 steps complete.
-355 of 365 steps complete.
-356 of 365 steps complete.
-357 of 365 steps complete.
-358 of 365 steps complete.
-359 of 365 steps complete.
-360 of 365 steps complete.
-361 of 365 steps complete.
-362 of 365 steps complete.
-363 of 365 steps complete.
-364 of 365 steps complete.
-365 of 365 steps complete.
-Done - 0:01:26
+1000 of 100000 (node) individuals initialized.
+1000 of 100000 (node) individuals initialized.
+2000 of 100000 (node) individuals initialized.
+2000 of 100000 (node) individuals initialized.
+3000 of 100000 (node) individuals initialized.
+3000 of 100000 (node) individuals initialized.
+4000 of 100000 (node) individuals initialized.
+4000 of 100000 (node) individuals initialized.
+5000 of 100000 (node) individuals initialized.
+5000 of 100000 (node) individuals initialized.
+6000 of 100000 (node) individuals initialized.
+6000 of 100000 (node) individuals initialized.
+7000 of 100000 (node) individuals initialized.
+7000 of 100000 (node) individuals initialized.
+8000 of 100000 (node) individuals initialized.
+8000 of 100000 (node) individuals initialized.
+9000 of 100000 (node) individuals initialized.
+9000 of 100000 (node) individuals initialized.
+10000 of 100000 (node) individuals initialized.
+10000 of 100000 (node) individuals initialized.
+11000 of 100000 (node) individuals initialized.
+11000 of 100000 (node) individuals initialized.
+12000 of 100000 (node) individuals initialized.
+12000 of 100000 (node) individuals initialized.
+13000 of 100000 (node) individuals initialized.
+13000 of 100000 (node) individuals initialized.
+14000 of 100000 (node) individuals initialized.
+14000 of 100000 (node) individuals initialized.
+15000 of 100000 (node) individuals initialized.
+15000 of 100000 (node) individuals initialized.
+16000 of 100000 (node) individuals initialized.
+16000 of 100000 (node) individuals initialized.
+17000 of 100000 (node) individuals initialized.
+17000 of 100000 (node) individuals initialized.
+18000 of 100000 (node) individuals initialized.
+18000 of 100000 (node) individuals initialized.
+19000 of 100000 (node) individuals initialized.
+19000 of 100000 (node) individuals initialized.
+20000 of 100000 (node) individuals initialized.
+20000 of 100000 (node) individuals initialized.
+21000 of 100000 (node) individuals initialized.
+21000 of 100000 (node) individuals initialized.
+22000 of 100000 (node) individuals initialized.
+22000 of 100000 (node) individuals initialized.
+23000 of 100000 (node) individuals initialized.
+23000 of 100000 (node) individuals initialized.
+24000 of 100000 (node) individuals initialized.
+24000 of 100000 (node) individuals initialized.
+25000 of 100000 (node) individuals initialized.
+25000 of 100000 (node) individuals initialized.
+26000 of 100000 (node) individuals initialized.
+26000 of 100000 (node) individuals initialized.
+27000 of 100000 (node) individuals initialized.
+27000 of 100000 (node) individuals initialized.
+28000 of 100000 (node) individuals initialized.
+28000 of 100000 (node) individuals initialized.
+29000 of 100000 (node) individuals initialized.
+29000 of 100000 (node) individuals initialized.
+30000 of 100000 (node) individuals initialized.
+30000 of 100000 (node) individuals initialized.
+31000 of 100000 (node) individuals initialized.
+31000 of 100000 (node) individuals initialized.
+32000 of 100000 (node) individuals initialized.
+32000 of 100000 (node) individuals initialized.
+33000 of 100000 (node) individuals initialized.
+33000 of 100000 (node) individuals initialized.
+34000 of 100000 (node) individuals initialized.
+34000 of 100000 (node) individuals initialized.
+35000 of 100000 (node) individuals initialized.
+35000 of 100000 (node) individuals initialized.
+36000 of 100000 (node) individuals initialized.
+36000 of 100000 (node) individuals initialized.
+37000 of 100000 (node) individuals initialized.
+37000 of 100000 (node) individuals initialized.
+38000 of 100000 (node) individuals initialized.
+38000 of 100000 (node) individuals initialized.
+39000 of 100000 (node) individuals initialized.
+39000 of 100000 (node) individuals initialized.
+40000 of 100000 (node) individuals initialized.
+40000 of 100000 (node) individuals initialized.
+41000 of 100000 (node) individuals initialized.
+41000 of 100000 (node) individuals initialized.
+42000 of 100000 (node) individuals initialized.
+42000 of 100000 (node) individuals initialized.
+43000 of 100000 (node) individuals initialized.
+43000 of 100000 (node) individuals initialized.
+44000 of 100000 (node) individuals initialized.
+44000 of 100000 (node) individuals initialized.
+45000 of 100000 (node) individuals initialized.
+45000 of 100000 (node) individuals initialized.
+46000 of 100000 (node) individuals initialized.
+46000 of 100000 (node) individuals initialized.
+47000 of 100000 (node) individuals initialized.
+47000 of 100000 (node) individuals initialized.
+48000 of 100000 (node) individuals initialized.
+48000 of 100000 (node) individuals initialized.
+49000 of 100000 (node) individuals initialized.
+49000 of 100000 (node) individuals initialized.
+50000 of 100000 (node) individuals initialized.
+50000 of 100000 (node) individuals initialized.
+51000 of 100000 (node) individuals initialized.
+51000 of 100000 (node) individuals initialized.
+52000 of 100000 (node) individuals initialized.
+52000 of 100000 (node) individuals initialized.
+53000 of 100000 (node) individuals initialized.
+53000 of 100000 (node) individuals initialized.
+54000 of 100000 (node) individuals initialized.
+54000 of 100000 (node) individuals initialized.
+55000 of 100000 (node) individuals initialized.
+55000 of 100000 (node) individuals initialized.
+56000 of 100000 (node) individuals initialized.
+56000 of 100000 (node) individuals initialized.
+57000 of 100000 (node) individuals initialized.
+57000 of 100000 (node) individuals initialized.
+58000 of 100000 (node) individuals initialized.
+58000 of 100000 (node) individuals initialized.
+59000 of 100000 (node) individuals initialized.
+59000 of 100000 (node) individuals initialized.
+60000 of 100000 (node) individuals initialized.
+60000 of 100000 (node) individuals initialized.
+61000 of 100000 (node) individuals initialized.
+61000 of 100000 (node) individuals initialized.
+62000 of 100000 (node) individuals initialized.
+62000 of 100000 (node) individuals initialized.
+63000 of 100000 (node) individuals initialized.
+63000 of 100000 (node) individuals initialized.
+64000 of 100000 (node) individuals initialized.
+64000 of 100000 (node) individuals initialized.
+65000 of 100000 (node) individuals initialized.
+65000 of 100000 (node) individuals initialized.
+66000 of 100000 (node) individuals initialized.
+66000 of 100000 (node) individuals initialized.
+67000 of 100000 (node) individuals initialized.
+67000 of 100000 (node) individuals initialized.
+68000 of 100000 (node) individuals initialized.
+68000 of 100000 (node) individuals initialized.
+69000 of 100000 (node) individuals initialized.
+69000 of 100000 (node) individuals initialized.
+70000 of 100000 (node) individuals initialized.
+70000 of 100000 (node) individuals initialized.
+71000 of 100000 (node) individuals initialized.
+71000 of 100000 (node) individuals initialized.
+72000 of 100000 (node) individuals initialized.
+72000 of 100000 (node) individuals initialized.
+73000 of 100000 (node) individuals initialized.
+73000 of 100000 (node) individuals initialized.
+74000 of 100000 (node) individuals initialized.
+74000 of 100000 (node) individuals initialized.
+75000 of 100000 (node) individuals initialized.
+75000 of 100000 (node) individuals initialized.
+76000 of 100000 (node) individuals initialized.
+76000 of 100000 (node) individuals initialized.
+77000 of 100000 (node) individuals initialized.
+77000 of 100000 (node) individuals initialized.
+78000 of 100000 (node) individuals initialized.
+78000 of 100000 (node) individuals initialized.
+79000 of 100000 (node) individuals initialized.
+79000 of 100000 (node) individuals initialized.
+80000 of 100000 (node) individuals initialized.
+80000 of 100000 (node) individuals initialized.
+81000 of 100000 (node) individuals initialized.
+81000 of 100000 (node) individuals initialized.
+82000 of 100000 (node) individuals initialized.
+82000 of 100000 (node) individuals initialized.
+83000 of 100000 (node) individuals initialized.
+83000 of 100000 (node) individuals initialized.
+84000 of 100000 (node) individuals initialized.
+84000 of 100000 (node) individuals initialized.
+85000 of 100000 (node) individuals initialized.
+85000 of 100000 (node) individuals initialized.
+86000 of 100000 (node) individuals initialized.
+86000 of 100000 (node) individuals initialized.
+87000 of 100000 (node) individuals initialized.
+87000 of 100000 (node) individuals initialized.
+88000 of 100000 (node) individuals initialized.
+88000 of 100000 (node) individuals initialized.
+89000 of 100000 (node) individuals initialized.
+89000 of 100000 (node) individuals initialized.
+90000 of 100000 (node) individuals initialized.
+90000 of 100000 (node) individuals initialized.
+91000 of 100000 (node) individuals initialized.
+91000 of 100000 (node) individuals initialized.
+92000 of 100000 (node) individuals initialized.
+92000 of 100000 (node) individuals initialized.
+93000 of 100000 (node) individuals initialized.
+93000 of 100000 (node) individuals initialized.
+94000 of 100000 (node) individuals initialized.
+94000 of 100000 (node) individuals initialized.
+95000 of 100000 (node) individuals initialized.
+95000 of 100000 (node) individuals initialized.
+96000 of 100000 (node) individuals initialized.
+96000 of 100000 (node) individuals initialized.
+97000 of 100000 (node) individuals initialized.
+97000 of 100000 (node) individuals initialized.
+98000 of 100000 (node) individuals initialized.
+98000 of 100000 (node) individuals initialized.
+99000 of 100000 (node) individuals initialized.
+99000 of 100000 (node) individuals initialized.
+100000 of 100000 (node) individuals initialized.
+100000 of 100000 (node) individuals initialized.
+1 of 30 steps complete.
+2 of 30 steps complete.
+3 of 30 steps complete.
+4 of 30 steps complete.
+5 of 30 steps complete.
+6 of 30 steps complete.
+7 of 30 steps complete.
+8 of 30 steps complete.
+9 of 30 steps complete.
+10 of 30 steps complete.
+11 of 30 steps complete.
+12 of 30 steps complete.
+13 of 30 steps complete.
+14 of 30 steps complete.
