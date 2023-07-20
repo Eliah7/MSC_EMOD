@@ -212,4 +212,3 @@ Beginning Simulation...
 11 of 30 steps complete.
 12 of 30 steps complete.
 13 of 30 steps complete.
-14 of 30 steps complete.
