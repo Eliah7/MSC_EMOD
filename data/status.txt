@@ -228,3 +228,5 @@ Beginning Simulation...
 27 of 30 steps complete.
 28 of 30 steps complete.
 29 of 30 steps complete.
+30 of 30 steps complete.
+Done - 0:00:22
