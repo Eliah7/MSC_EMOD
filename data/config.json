@@ -92,7 +92,7 @@
     "Fever_IRBC_Kill_Rate": 0.2,
     "Fever_Mortality_Inverse_Width": 10,
     "Fever_Mortality_Threshold": 3.0,
-    "Fever_Severe_Inverse_Width": 10,
+    "Fever_Severe_Inverse_Width": 500000,
     "Fever_Severe_Threshold": 1.5,
     "Gametocyte_Stage_Survival_Rate": 1,
     "Genome_Markers": [],
