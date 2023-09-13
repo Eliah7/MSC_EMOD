@@ -1,0 +1,107 @@
+Failure # 1 (occurred at 2023-08-02_19-14-23)
+[36mray::A3C.train()[39m (pid=40299, ip=10.8.13.207, repr=A3C)
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/tune/trainable/trainable.py", line 367, in train
+    raise skipped from exception_cause(skipped)
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/tune/trainable/trainable.py", line 364, in train
+    result = self.step()
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/algorithms/algorithm.py", line 749, in step
+    results, train_iter_ctx = self._run_one_training_iteration()
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/algorithms/algorithm.py", line 2623, in _run_one_training_iteration
+    results = self.training_step()
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/algorithms/a3c/a3c.py", line 213, in training_step
+    async_results = self.workers.fetch_ready_async_reqs()
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/evaluation/worker_set.py", line 801, in fetch_ready_async_reqs
+    handle_remote_call_result_errors(remote_results, self._ignore_worker_failures)
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/evaluation/worker_set.py", line 73, in handle_remote_call_result_errors
+    raise r.get()
+ray.exceptions.RayTaskError(ReadTimeout): [36mray::RolloutWorker.apply()[39m (pid=40299, ip=10.8.13.207, repr=<ray.rllib.evaluation.rollout_worker._modify_class.<locals>.Class object at 0x7f8814d939d0>)
+  File "<string>", line 3, in raise_from
+  File "/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/opt/anaconda3/lib/python3.8/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/opt/anaconda3/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/opt/anaconda3/lib/python3.8/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/anaconda3/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+[36mray::RolloutWorker.apply()[39m (pid=40299, ip=10.8.13.207, repr=<ray.rllib.evaluation.rollout_worker._modify_class.<locals>.Class object at 0x7f8814d939d0>)
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/opt/anaconda3/lib/python3.8/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/opt/anaconda3/lib/python3.8/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: UnixHTTPConnectionPool(host='localhost', port=None): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+[36mray::RolloutWorker.apply()[39m (pid=40299, ip=10.8.13.207, repr=<ray.rllib.evaluation.rollout_worker._modify_class.<locals>.Class object at 0x7f8814d939d0>)
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/utils/actor_manager.py", line 183, in apply
+    raise e
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/utils/actor_manager.py", line 174, in apply
+    return func(self, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/algorithms/a3c/a3c.py", line 196, in sample_and_compute_grads
+    samples = worker.sample()
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 900, in sample
+    batches = [self.input_reader.next()]
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 92, in next
+    batches = [self.get_data()]
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 517, in get_data
+    raise rollout
+  File "/opt/anaconda3/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 451, in run
+    raise e
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 448, in run
+    self._run()
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 503, in _run
+    item = next(env_runner)
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 721, in _env_runner
+    base_env.send_actions(actions_to_send)
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 396, in send_actions
+    ) = self.vector_env.vector_step(action_vector)
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 309, in vector_step
+    raise e
+  File "/opt/anaconda3/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 302, in vector_step
+    obs, r, done, info = self.envs[i].step(actions[i])
+  File "/home/mbwie001/ms/MSC_EMOD/env/environment.py", line 57, in step
+    wait_for_sim = run_simulation()
+  File "/home/mbwie001/ms/MSC_EMOD/utils/simulation.py", line 8, in run_simulation
+    return execute_docker_commands()
+  File "/home/mbwie001/ms/MSC_EMOD/utils/simulation.py", line 27, in execute_docker_commands
+    cont = client.containers.run(image="idm:v3", volumes=[f"/home/mbwie001/ms/MSC_EMOD/data:/EMOD"], command=["-c", "/Eradication -C config.json"], detach=True)
+  File "/opt/anaconda3/lib/python3.8/site-packages/docker/models/containers.py", line 826, in run
+    container.start()
+  File "/opt/anaconda3/lib/python3.8/site-packages/docker/models/containers.py", line 404, in start
+    return self.client.api.start(self.id, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/docker/utils/decorators.py", line 19, in wrapped
+    return f(self, resource_id, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/docker/api/container.py", line 1108, in start
+    res = self._post(url)
+  File "/opt/anaconda3/lib/python3.8/site-packages/docker/utils/decorators.py", line 46, in inner
+    return f(self, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/docker/api/client.py", line 233, in _post
+    return self.post(url, **self._set_request_timeout(kwargs))
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: UnixHTTPConnectionPool(host='localhost', port=None): Read timed out. (read timeout=60)
